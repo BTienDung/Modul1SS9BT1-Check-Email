@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkEmail(str) {
+            regexp = /^[0-9a-zA-Z]+[0-9a-zA-Z]*@[0-9a-zA-Z]+(\.[A-Za-z0-9]+)$/
+            if (regexp.test(str)){
+                console.log('Email hợp lệ');
+            } else {
+                console.log('Email không hợp lệ');
+            }
+        }
+        let email1 = 'a@gmail.com';
+        checkEmail(email1);
+        let email2 = 'abcd@gmail.com';
+        checkEmail(email2);
+        let email3 = '@gmail.com';
+        checkEmail(email3);
+        let email4 = '#@gmail.com';
+        checkEmail(email4);
+        let email5 = 'ab@gmail.';
+        checkEmail(email5);
+    </script>
+</body>
+</html>
